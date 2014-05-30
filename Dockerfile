@@ -9,6 +9,6 @@ ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
 
 EXPOSE 80
-ADD html /var/www
+#ADD html /var/www
 ENTRYPOINT ["/usr/sbin/apache2"]
 CMD ["-D", "FOREGROUND"]
